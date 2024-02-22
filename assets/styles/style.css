@@ -115,6 +115,16 @@ section.banner h1 {
 }
 
 /* Main Content */
+div.flex-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.flex-row section.content {
+    max-width: 800px;
+}
+
 section.content {
     margin-bottom: 10%;
 }
