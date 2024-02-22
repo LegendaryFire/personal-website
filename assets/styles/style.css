@@ -27,6 +27,23 @@ main {
     padding: 15vh 5vw 0vw 5vw;
 }
 
+main button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #232d3f;
+    color: #dadada;
+    border: 1px solid #dadada;
+    padding: 8px 23px;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #0d131d;
+}
+
 /* Navigation & Banner*/
 nav {
     margin: 3vh 5vw;
@@ -123,7 +140,7 @@ div.flex-row {
 }
 
 div.flex-row section.content {
-    max-width: 800px;
+    max-width: 650px;
 }
 
 section.content {
@@ -138,45 +155,37 @@ p.tab {
     text-indent: 40px;
 }
 
-p.collapse {
-    display: block;
-}
-
-button {
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    background-color: #232d3f;
-    color: #dadada;
-    border: 1px solid #dadada;
-    padding: 8px 23px;
-    transition: background-color 300ms;
-    cursor: pointer;
-}
-
-button.more {
+button.collapsible {
     display: none;
 }
 
-button:hover {
-    background-color: #0d131d;
-}
-
 @media (max-width: 577px) {
-    section.content .auto-align {
+    section.content .auto-align, section.content:nth-child(2n) .auto-align {
         text-align: center;
     }
 
-    section.content:nth-child(2n) .auto-align {
-        text-align: center;
+    div.collapsible {
+        display: grid;
+        grid-template-rows: 0fr;
+        padding: 0;
+        margin: 0;
+        transition: grid-template-rows 250ms ease-in-out;
+    }
+    
+    div.collapsible p {
+        overflow: hidden;
+        margin-top: 0;
+    }
+    
+    div.collapsible.show {
+        grid-template-rows: 1fr;
     }
 
-    p.collapse {
-        display: none;
-    }
-
-    button.more {
+    button.collapsible {
         display: block;
+    }
+
+    div.collapsible:not(.show) p {
+        margin: 0;
     }
 }
