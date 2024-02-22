@@ -1,3 +1,4 @@
+/* Base Styles */
 html {
     background-color: #0d131d;
     color: #dadada;
@@ -22,7 +23,6 @@ p {
 
 main {
     background-color: #232d3f;
-    min-height: 100vh;
     margin-top: -10vh;
     padding: 15vh 5vw 0vw 5vw;
 }
@@ -52,6 +52,7 @@ nav ul {
 nav li {
     align-self: center;
     margin: 10px;
+    transition: color 300ms;
 }
 
 nav li i {
