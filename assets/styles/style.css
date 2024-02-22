@@ -1,0 +1,110 @@
+html {
+    background-color: #0d131d;
+    color: #dadada;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #232d3f;
+    min-height: 100vh;
+}
+
+/* Navigation & Banner*/
+nav {
+    margin: 3vh 5vw;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+nav .logo img {
+    max-width: 200px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 180px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    align-self: center;
+    margin: 10px;
+}
+
+nav li i {
+    font-size: 35px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav li:hover {
+    color: rgb(194, 194, 194);
+}
+
+section.banner {
+    text-align: center;
+    background-color: #0d131d;
+    width: 100%;
+    min-height: 260px;
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+
+section.banner .banner-container {
+    text-align: right;
+    padding-top: 2%;
+}
+
+section.banner h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 577px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    nav .logo {
+        width: 100vw;
+        margin-right: 0;
+        text-align: center;
+
+    }
+
+    nav li {
+        margin-top: 25px;
+        margin: 25px 15px;
+    }
+
+    nav li i {
+        font-size: 40px;
+    }
+
+    section.banner h1 {
+        font-size: 60px;
+    }
+}
+
+/* Main Content */
+section.second {
+    margin-top: 5vh;
+    text-align: center;
+    width: 100%;
+    min-height: 30vh;
+    margin-top: -10vh;
+
+}
