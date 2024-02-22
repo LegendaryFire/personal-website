@@ -138,12 +138,45 @@ p.tab {
     text-indent: 40px;
 }
 
+p.collapse {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #232d3f;
+    color: #dadada;
+    border: 1px solid #dadada;
+    padding: 8px 23px;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+button.more {
+    display: none;
+}
+
+button:hover {
+    background-color: #0d131d;
+}
+
 @media (max-width: 577px) {
-    p {
+    section.content .auto-align {
         text-align: center;
     }
 
-    p.tab {
-        text-indent: 0px;
+    section.content:nth-child(2n) .auto-align {
+        text-align: center;
+    }
+
+    p.collapse {
+        display: none;
+    }
+
+    button.more {
+        display: block;
     }
 }

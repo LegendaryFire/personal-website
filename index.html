@@ -68,7 +68,7 @@
             off my software journey by diving into the realms of Visual Basic 6,
             and later progressed my way to Python, Java, C++ and beyond.
           </p>
-          <p class="tab">
+          <p id="welcome" class="tab collapse">
             Starting with the basic fundamentals such as the 'print' statement,
             I've leveled up my skills to use popular web libraries and
             frameworks like Express.js, React, Django, and more. However, my
@@ -80,6 +80,7 @@
             Docker to orchestrate a multitude of web services, each accessible
             through a public domain utilizing a reverse proxy configuration.
           </p>
+          <button class="more" id="welcomeMore">See More</button>
         </section>
         <section class="content top">
           <h1 class="auto-align">A little more about me.</h1>
@@ -95,7 +96,7 @@
             Always open to recommendations, feel free to hit me with your best
             shot—whether it's a latte, a mocha, or something more adventurous.
           </p>
-          <p class="tab">
+          <p id="about" class="tab collapse">
             Coming from a household that valued hands-on skills, I immersed
             myself in automotive mechanics from a tender age. One of my proudest
             accomplishments is custom building a high-performance Mustang engine
@@ -105,23 +106,15 @@
             collaborative settings and excel at working effectively within
             teams, as well as on my own.
           </p>
+          <button class="more" id="aboutMore">See More</button>
         </section>
       </div>
     </main>
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-      const firebaseConfig = {
-        apiKey: "AIzaSyBSpfwG-LXQ1Djza-H24S4BTRG27igwGjw",
-        authDomain: "tristan-balon.firebaseapp.com",
-        projectId: "tristan-balon",
-        storageBucket: "tristan-balon.appspot.com",
-        messagingSenderId: "812938974659",
-        appId: "1:812938974659:web:83452a1799de0add829976",
-        measurementId: "G-G0DHY1W4WT",
-      };
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
+
+    <script type="module" src="assets/scripts/firebase.js"></script>
+    <script
+      type="application/javascript"
+      src="assets/scripts/script.js"
+    ></script>
   </body>
 </html>
