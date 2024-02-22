@@ -135,5 +135,15 @@ section.content:nth-child(2n) .auto-align {
 }
 
 p.tab {
-    text-indent: 40px
+    text-indent: 40px;
+}
+
+@media (max-width: 577px) {
+    p {
+        text-align: center;
+    }
+
+    p.tab {
+        text-indent: 0px;
+    }
 }
