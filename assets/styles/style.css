@@ -177,7 +177,7 @@ button.collapsible {
 
 @media (max-width: 577px) {
     section.content .auto-align, section.content:nth-child(2n) .auto-align {
-        text-align: center;
+        text-align: left;
     }
 
     div.collapsible {
