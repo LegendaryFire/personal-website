@@ -11,9 +11,25 @@ body {
 
 }
 
-h1 {
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button.align-right {
+    margin-left: auto;
+    float: right;
+}
+
+h2, h1 {
     margin: 0;
     font-family: "Noto Sans";
+    font-weight: 300;
+    
+}
+
+h2 {
+    font-size: 20px;
 }
 
 p {
@@ -182,11 +198,15 @@ button.collapsible {
     }
 
     button.collapsible {
-        margin-left: auto;
         display: block;
     }
 
     div.collapsible:not(.show) p {
         margin: 0;
     }
+}
+
+h1.section-title {
+    text-align: center;
+    margin-bottom: 10px;
 }
