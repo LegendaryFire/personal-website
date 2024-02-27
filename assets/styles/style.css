@@ -60,7 +60,7 @@ main button:hover {
     background-color: #0d131d;
 }
 
-/* Navigation & Banner*/
+/* Navigation & Banner */
 nav {
     margin: 3vh 5vw;
 }
@@ -160,7 +160,7 @@ div.flex-row section.content {
 }
 
 section.content {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 section.content:nth-child(2n) .auto-align {
