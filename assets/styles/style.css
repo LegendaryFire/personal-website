@@ -160,7 +160,7 @@ div.flex-row section.content {
 }
 
 section.content {
-    margin-bottom: 10%;
+    margin-bottom: 25px;
 }
 
 section.content:nth-child(2n) .auto-align {
@@ -208,5 +208,6 @@ button.collapsible {
 
 h1.section-title {
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
