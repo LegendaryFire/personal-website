@@ -182,6 +182,7 @@ button.collapsible {
     }
 
     button.collapsible {
+        margin-left: auto;
         display: block;
     }
 
