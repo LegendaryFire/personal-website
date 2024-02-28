@@ -11,6 +11,19 @@ body {
 
 }
 
+button {
+    padding: 6px 8px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #232d3f;
+    border: 1px solid #dadada;
+    color: #dadada;
+}
+
+button:hover {
+    background-color: #0d131d;
+}
+
 h2,
 h1 {
     margin: 0;
@@ -32,15 +45,15 @@ header {
     padding: 1vh 6vw;
 }
 
-nav .logo {
+header nav .logo {
     margin-right: auto;
 }
 
-nav .logo img {
+header nav .logo img {
     max-width: 200px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 180px;
@@ -49,39 +62,39 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+header nav li {
     align-self: center;
     margin: 0.7em;
     transition: color 300ms;
 }
 
-nav li i {
+header nav li i {
     font-size: 2.5em;
 }
 
-nav li a {
+header nav li a {
     text-decoration: none;
     color: inherit;
 }
 
-nav li:hover {
+header nav li:hover {
     color: rgb(194, 194, 194);
 }
 
 
 @media (max-width: 577px) {
-    nav ul {
+    header nav ul {
         justify-content: center;
     }
 
-    nav .logo {
+    header nav .logo {
         width: 100vw;
         margin-right: 0;
         text-align: center;
 
     }
 
-    nav li {
+    header nav li {
         margin: 1.5em 1em;
     }
 }
@@ -96,11 +109,10 @@ nav li:hover {
 .content-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0 3vw;
 }
 
-section.content:nth-of-type(2n) {
+.content:nth-of-type(2n) {
     background-color: #232d3f;
     clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
     padding: 12vh 0;
@@ -117,6 +129,54 @@ section.content:nth-of-type(2n) {
     font-size: 70px;
 }
 
+@media (max-width: 577px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content > h1 {
+        text-align: center;
+    }
+
+    .collapse {
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 1vh 6vw;
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav li {
+    align-self: center;
+    margin: 0.7em;
+    transition: color 300ms;
+}
+
+footer nav li i {
+    font-size: 2.5em;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer nav li:hover {
+    color: rgb(194, 194, 194);
+}
 
 /* Helper Styles and Miscellaneous */
 hr {

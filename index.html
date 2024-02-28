@@ -61,7 +61,7 @@
       </section>
       <section class="content">
         <div class="content-container">
-          <h1 class="auto-align">Welcome to my portfolio.</h1>
+          <h1>Welcome to my portfolio.</h1>
           <hr />
           <p class="tab">
             I'm a twenty-seven-year-old software developer, born and raised
@@ -73,7 +73,7 @@
             off my software journey by diving into the realms of Visual Basic 6,
             and later progressed my way to Python, Java, C++ and beyond.
           </p>
-          <div id="welcome" class="collapsible">
+          <div id="welcome" class="collapse">
             <p class="tab">
               Starting with the basic fundamentals such as the 'print'
               statement, I've leveled up my skills to use popular web libraries
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div class="content-container">
-          <h1 class="auto-align">A little more about me.</h1>
+          <h1>A little more about me.</h1>
           <hr />
           <p class="tab">
             Beyond my enthusiasm for technology, I'm passionate about the
@@ -103,7 +103,7 @@
             Always open to recommendations, feel free to hit me with your best
             shot—whether it's a latte, a mocha, or something more adventurous.
           </p>
-          <div id="about" class="collapsible">
+          <div id="about" class="collapse">
             <p class="tab">
               Coming from a household that valued hands-on skills, I immersed
               myself in automotive mechanics from a tender age. One of my
@@ -117,7 +117,83 @@
           </div>
         </div>
       </section>
+      <section class="content">
+        <h1>Projects</h1>
+      </section>
+      <section class="content">
+        <div class="content-container">
+          <h2>django-responsive-tables2</h2>
+          <hr />
+          <p>
+            This Django package is intended to add functionality to the already
+            outstanding django_tables2 library. Using this package, you'll be able
+            to easily implement responsive full-text search capabilities, pagination
+            and more. Although a default bootstrap template is included, this library
+            allows for customization, and a template can be used to theme the table
+            however required.
+          </p>
+        </div>
+        <div class="content-container">
+          <h2>edge-runlist-builder</h2>
+          <hr />
+          <p>
+            This tool automates building vehicle runlists for the Edge Pipeline
+            auction sales platform. This tool uses Selenium to pull presale auction data
+            to match with owned units on the point of sales for easy calculation of breakeven
+            costs, reserve/line prices, source of purchasing and more. This tool copies the
+            table it generates into the clipboard, so it can be easily entered in Microsoft
+            Teams or an Excel document.
+          </p>
+        </div>
+        <div class="content-container">
+          <h2>sonos-controller</h2>
+          <hr />
+          <p>
+            This app serves as a controller for your Sonos multiroom audio system using Python.
+            Using sonos-controller you'll be able to control the volume of your Sonos zones using
+            the native media keys on your keyboard. Hotkeys can be changed, and players can be
+            added or removed by modifying the XML configuration file.
+          </p>
+        </div>
+        <div class="content-container">
+          <h2>kijiji-scraper</h2>
+          <hr />
+          <p>
+            This scraper is a web crawler which provides a way to receive new listing notifications
+            sooner than the ones from Kijiji which are only sent daily (once every 24-hours). This
+            scraper also increases the functionality with bump and price change notifications.
+            Notifications are sent using Pushover, and include a title, short description, image,
+            price, phone number (if applicable) and a link to the ad.
+          </p>
+        </div>
+      </section>
     </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://linkedin.com/in/tristan-balon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/legendaryfire">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://steamcommunity.com/id/LegendaryFire/">
+              <i class="fa-brands fa-square-steam"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tristan.balon@outlook.com">
+              <i class="fa-solid fa-square-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     <script type="module" src="assets/scripts/firebase.js"></script>
   </body>
 </html>
