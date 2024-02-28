@@ -1,13 +1,13 @@
-// Handle buttons for Welcome paragraph.
-const buttonElems = document.querySelectorAll("button.collapsible");
-buttonElems.forEach((buttonElem) =>  {
-  buttonElem.addEventListener("click", function() {
-    let id = buttonElem.getAttribute("name");
-    const elem = document.getElementById(id);
-    if (elem.classList.toggle("show")) {
-      buttonElem.innerText = "See Less";
+// Handle buttons for paragraphs.
+const actionButtons = document.querySelectorAll("button[data-target]");
+actionButtons.forEach((btnElement) => {
+  btnElement.addEventListener("click", function () {
+    let hideElement = btnElement.getAttribute("data-target");
+    hideElement = document.getElementById(hideElement);
+    if (hideElement.classList.toggle("show")) {
+      btnElement.innerText = "See Less";
     } else {
-      buttonElem.innerText = "See More";
+      btnElement.innerText = "See More";
     }
   });
 });
