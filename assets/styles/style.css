@@ -144,16 +144,7 @@ header nav li:hover {
     display: none;
 }
 
-
-@media (max-width: 992px) {
-    .content {
-        flex-direction: column;
-    }
-
-    .content>h1 {
-        text-align: center;
-    }
-
+@media (max-width: 576px) {
     .collapse {
         display: grid;
         grid-template-rows: 0fr;
@@ -179,6 +170,17 @@ header nav li:hover {
 
     .btn-toggle {
         display: block;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content>h1 {
+        text-align: center;
     }
 }
 
