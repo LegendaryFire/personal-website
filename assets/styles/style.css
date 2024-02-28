@@ -119,7 +119,7 @@ header nav li:hover {
 .content-container {
     display: flex;
     flex-direction: column;
-    margin: 2vh 3vw;
+    margin: 25px 3vw;
     width: 90vw;
 }
 
