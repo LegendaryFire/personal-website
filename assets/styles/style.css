@@ -221,6 +221,18 @@ footer nav li:hover {
     color: rgb(194, 194, 194);
 }
 
+footer .copyright {
+    margin-left: auto;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    footer .copyright {
+        width: 100%;
+    }
+}
+
 /* Helper Styles and Miscellaneous */
 hr {
     width: 100%;
@@ -228,8 +240,4 @@ hr {
 
 .tab {
     text-indent: 30px;
-}
-
-.copyright {
-    margin-right: auto;
 }
