@@ -145,6 +145,11 @@ header nav li:hover {
 }
 
 @media (max-width: 576px) {
+    .banner h1 {
+        font-family: serif;
+        font-size: 60px;
+    }
+
     .collapse {
         display: grid;
         grid-template-rows: 0fr;
