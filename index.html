@@ -64,28 +64,23 @@
           <h2>Welcome to my portfolio.</h2>
           <hr />
           <p class="tab">
-            I'm a twenty-seven-year-old software developer, born and raised
-            under the vast prairie skies of Saskatoon, Saskatchewan, who made
-            the move to Vancouver, British Columbia, drawn by the allure of its
-            stunning natural beauty and vibrant tech scene. My passion and
-            dedication to technology knows no bounds, as I continuously find
-            myself studying new programming languages and paradigms. I kicked
-            off my software journey by diving into the realms of Visual Basic 6,
-            and later progressed my way to Python, Java, C++ and beyond.
+            I am a 27-year-old software developer residing in Vancouver, British
+            Columbia, drawn by its stunning natural beauty and vibrant tech
+            scene. My passion and dedication to technology knows no bounds, as I
+            continuously find myself studying new programming languages and
+            paradigms. I kicked off my software journey by diving into the
+            realms of Python and progressed my way to JavaScript, Java, C#, C++
+            and beyond.
           </p>
           <div id="welcome" class="collapse">
             <p class="tab">
-              Starting with the basic fundamentals such as the 'print'
-              statement, I've leveled up my skills to use popular web libraries
-              and frameworks like Express.js, React, Django, and more. However,
-              my interest doesn't stop at web development. As a dedicated gamer,
-              I'm deeply interested in game development and find joy in
-              exploring the intricacies of Unreal Engine. Continuing my studies,
-              I delved into the development to deployment lifecycle, where I
-              learned to master the practice of containerization with Docker.
-              Presently, I employ Docker to orchestrate a multitude of web
-              services, each accessible through a public domain utilizing a
-              reverse proxy configuration.
+              Starting with the print statement, I've leveled up my skills to
+              use popular web frameworks like Express.js, React and Django. As
+              an avid gamer, my interest doesn't stop at web development. I
+              invest my spare time in learning Unreal Engine and have knowledge
+              in both blueprints and C++. Additionally, I am proficient in
+              Docker, using it to streamline my development process and deploy
+              applications efficiently.
             </p>
           </div>
           <button class="btn-toggle" data-target="welcome">See More</button>
@@ -94,26 +89,22 @@
           <h2>A little more about me.</h2>
           <hr />
           <p class="tab">
-            Beyond my enthusiasm for technology, I'm passionate about the
-            outdoors and frequently engage in activities like hiking, biking,
-            and snowboarding. During the weekdays, you'll often find me at the
-            gym, either in the early morning or evening. Additionally, I'm a
-            devoted coffee and tea enthusiast, constantly seeking out the
-            trendiest cafes in the area. My favorite cup of caffeine is a
-            cortado with oat milk, closely followed by white peach oolong tea.
-            Always open to recommendations, feel free to hit me with your best
-            shot—whether it's a latte, a mocha, or something more adventurous.
+            Beyond my passion for technology, you'll often find me exploring the
+            outdoors either hiking, biking or snowboarding. As a devoted coffee
+            and tea enthusiast, you can also find me seeking out the trendiest
+            cafes in the area. My favorite cup of cup of caffeine is a cortado
+            with oat milk, closely followed by a white peach oolong tea. Always
+            open to recommendations, feel free to hit me with your best
+            shot-whether it's a latte, a mocha or something more adventurous.
           </p>
           <div id="about" class="collapse">
             <p class="tab">
-              Coming from a household that valued hands-on skills, I immersed
-              myself in automotive mechanics from a tender age. One of my
-              proudest accomplishments is custom building a high-performance
-              Mustang engine capable of delivering 700 horsepower, boosted by a
-              formidable 76mm turbocharger. Many would describe me as
-              kind-hearted, dedicated, and perpetually open-minded, always eager
-              to learn. I thrive in collaborative settings and excel at working
-              effectively within teams, as well as on my own.
+              In addition to my professional pursits, I enjoy turning old
+              electronics into smart devices with the help of microcontrollers.
+              With an ESP32 and the HDMI-CEC protocol, I managed to turn an
+              outdated TV into a smart device controllable from my phone. I was
+              also able to build a smart fan using an IR blaster allowing me to
+              control the power state, speed and timer.
             </p>
           </div>
           <button class="btn-toggle" data-target="about">See More</button>
@@ -127,57 +118,106 @@
           <h2>django-responsive-tables2</h2>
           <hr />
           <p>
-            This Django package is intended to add functionality to the already
-            outstanding django_tables2 library. Using this package, you'll be
-            able to easily implement responsive full-text search capabilities,
-            pagination and more. Although a default bootstrap template is
-            included, this library allows for customization, and a template can
-            be used to theme the table however required.
+            Easily implement responsive <i>django_tables2</i> tables with
+            full-text search and pagination functionality.
           </p>
+          <ul class="minimum">
+            <li>
+              <span class="icon">&#x1F680;</span>
+              Customizable with templates to support Bootstrap and other
+              frameworks.
+            </li>
+            <li>
+              <span class="icon">&#x1f4a1;</span>
+              Fully responsive tables for both full-text search and pagination.
+            </li>
+            <li>
+              <span class="icon">🛠️</span>
+              Supports implementation of custom filters, and can take any
+              QuerySet for sorting.
+            </li>
+          </ul>
         </div>
         <div class="content-container">
           <h2>edge-runlist-builder</h2>
           <hr />
           <p>
-            This tool automates building vehicle runlists for the Edge Pipeline
-            auction sales platform. This tool uses Selenium to pull presale
-            auction data to match with owned units on the point of sales for
-            easy calculation of breakeven costs, reserve/line prices, source of
-            purchasing and more. This tool copies the table it generates into
-            the clipboard, so it can be easily entered in Microsoft Teams or an
-            Excel document.
+            Generate vehicle runlists for Edge Pipeline auctions and
+            automatically calculate currency conversions, breakeven costs,
+            profits and line prices.
           </p>
-        </div>
-        <div class="content-container">
-          <h2>sonos-controller</h2>
-          <hr />
-          <p>
-            This app serves as a controller for your Sonos multiroom audio
-            system using Python. Using sonos-controller you'll be able to
-            control the volume of your Sonos zones using the native media keys
-            on your keyboard. Hotkeys can be changed, and players can be added
-            or removed by modifying the XML configuration file.
-          </p>
+          <ul class="minimum">
+            <li>
+              <span class="icon">&#x1F50D;</span>
+              Use presale auction data and find inventory using the point of
+              sales system REST API.
+            </li>
+            <li>
+              <span class="icon">&#x1F4CA;</span>
+              Effortless integration with Microsoft Excel and Teams for easy
+              collaboration on shared documents.
+            </li>
+            <li>
+              <span class="icon">&#128221;</span>
+              Complete column customization with result sorting and filtering
+              using regular expressions.
+            </li>
+          </ul>
         </div>
         <div class="content-container">
           <h2>kijiji-scraper</h2>
           <hr />
           <p>
-            This scraper is a web crawler which provides a way to receive new
-            listing notifications sooner than the ones from Kijiji which are
-            only sent daily (once every 24-hours). This scraper also increases
-            the functionality with bump and price change notifications.
-            Notifications are sent using Pushover, and include a title, short
-            description, image, price, phone number (if applicable) and a link
-            to the ad.
+            Never miss another deal and promptly receive notifications for new
+            listings sooner than everyone else.
           </p>
+          <ul class="minimum">
+            <li>
+              <span class="icon">&#x1F4E8;</span>
+              Receive notifiations on your mobile device with Pushover,
+              including the title, description, price and phone number.
+            </li>
+            <li>
+              <span class="icon">&#x1F4B2;</span>
+              Get notifed when the seller lowers the price of an item, or when
+              they paid to have the ad bumped.
+            </li>
+            <li>
+              <span class="icon">🏷️</span>
+              Supports multiple searches, and filter by category, location,
+              private sellers and businesses.
+            </li>
+          </ul>
+        </div>
+        <div class="content-container">
+          <h2>sonos-controller</h2>
+          <hr />
+          <p>
+            Control your Sonos multi-room audio system using the native media
+            keys on your keyboard, along with individual room control.
+          </p>
+          <ul class="minimum">
+            <li>
+              <span class="icon">&#x1f50a;</span>
+              Seamless volume control with a combo key and the native media keys
+              on your keyboard.
+            </li>
+            <li>
+              <span class="icon">⌨️</span>
+              Using the combo key and arrow keys to move to and from each room.
+            </li>
+            <li>
+              <span class="icon">&#x1F527;</span>
+              Configuration file with independent zone selection and mappable
+              hotkeys.
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer>
       <nav>
         <ul>
-          <li class="copyright">&copy; 2024 Tristan Balon</li>
           <li>
             <a href="https://linkedin.com/in/tristan-balon">
               <i class="fa-brands fa-linkedin"></i>
@@ -198,6 +238,7 @@
               <i class="fa-solid fa-square-envelope"></i>
             </a>
           </li>
+          <li class="copyright">&copy; 2024 Tristan Balon</li>
         </ul>
       </nav>
     </footer>
