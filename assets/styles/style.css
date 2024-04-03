@@ -8,7 +8,6 @@ html {
 body {
     padding: 0;
     margin: 0;
-
 }
 
 button {
@@ -119,7 +118,7 @@ header nav li:hover {
 .content-container {
     display: flex;
     flex-direction: column;
-    margin: 2vh 3vw;
+    margin: 25px 3vw;
     width: 90vw;
 }
 
@@ -145,6 +144,11 @@ header nav li:hover {
 }
 
 @media (max-width: 576px) {
+    .banner h1 {
+        font-family: serif;
+        font-size: 60px;
+    }
+
     .collapse {
         display: grid;
         grid-template-rows: 0fr;
@@ -253,5 +257,5 @@ hr {
 }
 
 .tab {
-    text-indent: 30px;
+    text-indent: 20px;
 }
