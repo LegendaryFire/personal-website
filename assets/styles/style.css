@@ -189,6 +189,25 @@ header nav li:hover {
     }
 }
 
+/* Projects */
+ul.minimum {
+    padding-left: 0em;
+    margin-top: 0.5em;
+    list-style-type: none;
+}
+
+ul.minimum span.icon {
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    font-size: 18px;
+}
+
+ul.minimum li {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
     padding: 1vh 6vw;
