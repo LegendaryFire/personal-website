@@ -196,6 +196,11 @@ p.project {
 
 a.project-link {
     float: right;
+    transition: 0.3s;
+}
+
+a.project-link:hover {
+    color: rgb(194, 194, 194);
 }
 
 .project-footer {
@@ -234,7 +239,7 @@ ul.minimum li {
     }
 
     .project-footer hr {
-        display: none;
+        opacity: 0.40;
     }
 }
 
