@@ -18,7 +18,7 @@ body {
 }
 
 button {
-    padding: 8px 8px;
+    padding: 8px;
     width: 120px;
     background-color: #232d3f;
     border-radius: 8px;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 p {
-    line-height: 1.7em;
+    line-height: 1.65em;
     letter-spacing: 0.3px;
 }
 
@@ -136,23 +136,16 @@ header nav li:hover {
     padding: 10px 0;
 }
 
-section.about-section .content-container {
-    min-height: 290px;
-    height: 100%;
-}
-
-section.projects-section .content-container,
-section.projects-section .content-wrapper {
-    max-width: 400px;
-    min-height: 400px;
-    height: 100%;
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-wrapper .content-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     background-color: #0d131d50;
     padding: 20px;
     border-radius: 8px;
@@ -186,10 +179,15 @@ section.projects-section .content-wrapper {
     margin-top: auto;
     display: none;
     font-size: 16px;
+    width: 100%;
 }
 
 
 @media (max-width: 576px) {
+    .banner {
+        padding-top: 0;
+    }
+
     .banner h1 {
         font-family: serif;
         font-size: 60px;
@@ -241,6 +239,7 @@ section.projects-section .content-wrapper {
 /* Projects */
 p.project {
     min-height: 90px;
+    line-height: 1.6em;
 }
 
 a.project-link {
