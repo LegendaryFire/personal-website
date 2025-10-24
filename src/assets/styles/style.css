@@ -1,5 +1,10 @@
 /* Base Styles */
+* {
+    box-sizing: inherit;
+}
+
 html {
+    box-sizing: border-box;
     background-color: #0d131d;
     color: #dadada;
     font-family: "Roboto", sans-serif;
@@ -46,7 +51,7 @@ a {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.7em;
     letter-spacing: 0.3px;
 }
 
@@ -114,21 +119,29 @@ header nav li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 35px;
     padding: 10px 0;
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
-    margin: 25px 3vw;
-    width: 90vw;
+    width: 100%;
+    background-color: #0d131d50;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #0d131d80;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
+}
+
+.content-container h2 {
+    font-style: italic;
 }
 
 .content:nth-of-type(2n) {
     background-color: #232d3f;
     clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%);
-    padding: calc(4vw + 10px) 0;
-
+    padding: calc(4vw + 35px) 25px;
 }
 
 .banner {
