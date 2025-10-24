@@ -114,6 +114,7 @@ header nav li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 .content-container {
@@ -125,13 +126,13 @@ header nav li:hover {
 
 .content:nth-of-type(2n) {
     background-color: #232d3f;
-    clip-path: polygon(0% 50px, 100% 0%, 100% calc(100% - 50px), 0% 100%);
-    padding: 12vh 0;
+    clip-path: polygon(0 4vw, 100% 0, 100% calc(100% - 4vw), 0 100%);
+    padding: calc(4vw + 10px) 0;
 
 }
 
 .banner {
-    padding: 3% 0;
+    padding: 20px 0 40px 0;
     text-align: center;
 }
 
