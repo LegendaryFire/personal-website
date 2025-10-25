@@ -1,92 +1,4 @@
-/* Base Styles */
-:root {
-    --background-color-primary: #232d3f;
-    --background-color-secondary: #0d131d;
-    --primary-text-color: #dadada;
-    --secondary-text-color: #cad4e5;
-    --border-color: #1f2933;
-    --button-hover-color: #1f2b3c;
-    --hover-color: #c2c2c2;
-}
-
-* {
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    background-color: var(--background-color-secondary);
-    color: var(--primary-text-color);
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.3s;
-}
-
-a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--hover-color);
-}
-
-button {
-    padding: 9px;
-    width: 120px;
-    background-color: var(--background-color-primary);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    color: var(--secondary-text-color);
-}
-
-button:hover {
-    background-color: var(--button-hover-color);
-    cursor: pointer;
-}
-
-hr {
-    color: var(--secondary-text-color);
-}
-
-h2, h1 {
-    margin: 0;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 300;
-}
-
-h1 {
-    font-size: 2.3em;
-}
-
-h2 {
-    font-size: 1.25em;
-}
-
-p {
-    line-height: 1.65em;
-    letter-spacing: 0.3px;
-}
-
-p:first-child {
-    margin-top: 0;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-p.tab {
-    text-indent: 20px;
-}
-
-/* Header & Navigation */
+/* Header and navigation */
 header {
     & {
         padding: 1vh 6vw;
@@ -202,10 +114,10 @@ section.content:nth-of-type(2n) {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                background-color: #1d2533;
+                background-color: var(--background-color-content);
                 padding: 20px;
                 border-radius: 12px;
-                border: 1px solid #1f2933;
+                border: 1px solid var(--border-color);
                 box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.12);
                 margin-top: 20px;
                 color: var(--secondary-text-color);
@@ -375,7 +287,7 @@ footer {
             }
 
             &:hover {
-                color: rgb(194, 194, 194);
+                color: var(--hover-color);
             }
 
             &.copyright {
