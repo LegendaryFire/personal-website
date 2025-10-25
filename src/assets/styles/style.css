@@ -193,6 +193,11 @@ header nav li:hover {
         font-size: 60px;
     }
 
+    .content:nth-of-type(2n) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .collapse {
         display: grid;
         grid-template-rows: 0fr;
