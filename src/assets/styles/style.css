@@ -74,55 +74,68 @@ p:last-child {
 
 /* Header & Navigation */
 header {
-    padding: 1vh 6vw;
-}
-
-header nav .logo {
-    margin-right: auto;
-}
-
-header nav .logo img {
-    max-width: 200px;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 180px;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav li {
-    align-self: center;
-    margin: 0.7em;
-    transition: color 300ms;
-}
-
-header nav li i {
-    font-size: 2.5em;
-}
-
-header nav li:hover {
-    color: rgb(194, 194, 194);
-}
-
-
-@media (max-width: 576px) {
-    header nav ul {
-        justify-content: center;
+    & {
+        padding: 1vh 6vw;
     }
 
-    header nav .logo {
-        width: 100vw;
-        margin-right: 0;
-        text-align: center;
+    nav {
+        .logo {
+            & {
+                margin-right: auto;
+            }
 
-    }
+            @media (max-width: 576px) {
+                & {
+                    width: 100vw;
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
 
-    header nav li {
-        margin: 1.5em 1em;
+            img {
+                max-width: 200px;
+            }
+        }
+
+        ul {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 180px;
+                justify-content: space-evenly;
+                list-style-type: none;
+                padding: 0;
+            }
+
+            @media (max-width: 576px) {
+                & {
+                    justify-content: center;
+                }
+            }
+        }
+
+        li {
+            & {
+                align-self: center;
+                margin: 0.7em;
+                transition: color 300ms;
+            }
+
+            @media (max-width: 576px) {
+                & {
+                    margin: 1.5em 1em;
+                }
+            }
+
+
+            &:hover {
+                color: rgb(194, 194, 194);
+            }
+
+            i {
+                font-size: 2.5em;
+            }
+        }
     }
 }
 
