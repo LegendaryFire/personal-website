@@ -20,10 +20,10 @@ body {
 button {
     padding: 9px;
     width: 120px;
-    background-color: #1e2737;
+    background-color: var(--background-color-primary);
     border-radius: 8px;
     border: 1px solid #1f2933;
-    color: #dadada;
+    color: #cad4e5;
 }
 
 button:hover {
@@ -152,6 +152,8 @@ header nav li:hover {
     border: 1px solid #1f2933;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.12);
     margin-top: 20px;
+    color: #cad4e5;
+    font-size: 17px;
 }
 
 .content-wrapper .title {
@@ -275,8 +277,8 @@ ul.minimum span.icon {
 }
 
 ul.minimum li {
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 17px;
+    line-height: 1.5em;
     margin-bottom: 7px;
     margin-left: 30px;
 }
@@ -341,7 +343,7 @@ footer .copyright {
 /* Helper Styles and Miscellaneous */
 hr {
     width: 100%;
-    color: #7e8b9a;
+    color: #cad4e5;
 }
 
 .tab {
