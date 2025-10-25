@@ -18,16 +18,16 @@ body {
 }
 
 button {
-    padding: 8px;
+    padding: 9px;
     width: 120px;
-    background-color: #232d3f;
+    background-color: #1e2737;
     border-radius: 8px;
-    border: 1px solid #0d131d80;
+    border: 1px solid #1f2933;
     color: #dadada;
 }
 
 button:hover {
-    background-color: #0d131d;
+    background-color: #1f2b3c;
     cursor: pointer;
 }
 
@@ -148,9 +148,9 @@ header nav li:hover {
     flex-direction: column;
     background-color: #293242;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid #1f2933;
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.12);
     margin-top: 20px;
 }
 
@@ -176,9 +176,9 @@ header nav li:hover {
 }
 
 .btn-toggle {
-    margin-top: auto;
+    margin-top: 15px;
     display: none;
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -341,6 +341,7 @@ footer .copyright {
 /* Helper Styles and Miscellaneous */
 hr {
     width: 100%;
+    color: #7e8b9a;
 }
 
 .tab {
