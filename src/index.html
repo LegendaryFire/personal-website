@@ -52,15 +52,17 @@
       <section class="content about-section">
         <div class="content-wrapper">
           <h2 class="title">Welcome to my portfolio.</h2>
-          <div class="content-container">
-            <p class="tab">
-              I’m a 29-year-old software engineer raised in Saskatoon and based in Vancouver. Drawn by the mountains,
-              you can find me enjoying them through my 4K monitor behind 23 browser tabs and a half finished project.
-              Out of the house, you'll find me shelled into my homelab, grabbing a coffee at a trendy cafe, soaking up
-              the sun on a paddleboard, or shredding fresh snow on my snowboard. When it’s rainy, you’ll find me at the
-              gym getting my cardio in.
-            </p>
-            <div id="welcome" class="collapse">
+          <div class="content-column">
+            <div class="content-container">
+              <p class="tab">
+                I’m a 29-year-old software engineer raised in Saskatoon and based in Vancouver. Drawn by the mountains,
+                you can find me enjoying them through my 4K monitor behind 23 browser tabs and a half finished project.
+                Out of the house, you'll find me shelled into my homelab, grabbing a coffee at a trendy cafe, soaking up
+                the sun on a paddleboard, or shredding fresh snow on my snowboard. When it’s rainy, you’ll find me at the
+                gym getting my cardio in.
+              </p>
+            </div>
+            <div class="content-container">
               <p class="tab">
                 With years of experience in web development and system administration, I manage a custom-built,
                 rack-mounted server running Ubuntu Server that hosts multiple Docker services. Some publicly accessible
@@ -71,21 +73,21 @@
                 are automatically updated when my public IP changes.
               </p>
             </div>
-            <button class="btn-toggle" data-target="welcome" style="">See More</button>
           </div>
         </div>
-
         <div class="content-wrapper">
           <h2 class="title">A little more about me.</h2>
-          <div class="content-container">
-            <p class="tab">
-              I love blending creativity with functionality. Beyond my passion for technology, I'm also passionate
-              about automotives and love getting dirty in the garage. I have a Mustang with a fully built engine,
-              sporting a V8 and 76mm turbo running 16psi of boost on 94 octane fuel with water methanol injection.
-              Whether it be a simple oil change, a transmission swap, or replacing a head gasket, I'm always eager to
-              twist some wrenches.
-            </p>
-            <div id="about" class="collapse">
+          <div class="content-column">
+            <div class="content-container">
+              <p class="tab">
+                I love blending creativity with functionality. Beyond my passion for technology, I'm also passionate
+                about automotives and love getting dirty in the garage. I have a Mustang with a fully built engine,
+                sporting a V8 and 76mm turbo running 16psi of boost on 94 octane fuel with water methanol injection.
+                Whether it be a simple oil change, a transmission swap, or replacing a head gasket, I'm always eager to
+                twist some wrenches.
+              </p>
+            </div>
+            <div class="content-container">
               <p class="tab">
                 I'm also enthusiastic about home automation, where I used an ESP32 to implement the HDMI-CEC protocol to
                 turn an old TV into a smart TV controllable through Home Assistant. I've also used an ESP8266 with an IR
@@ -95,7 +97,6 @@
                 Focal audio system in my car with a digital signal processor and amplifier.
               </p>
             </div>
-            <button class="btn-toggle" data-target="about">See More</button>
           </div>
         </div>
       </section>
@@ -121,7 +122,8 @@
                 <li>
                   Refactored the platform’s outgoing integrations system, enabling customizable pushed fields for
                   various APIs, including Oracle, Attentive, Campaign Monitor, Marketo, and ExactTarget, allowing for
-                  flexible mapping to different fields on each platform.
+                  flexible mapping to different fields on each platform. The new architecture streamlined data
+                  synchronization and reduced configuration complexity across clients.
                 </li>
                 <li>
                   Developed a customizable and themeable call-to-action link page generator for ticket vendors to
@@ -132,9 +134,20 @@
             <div class="content-container">
               <ul>
                 <li>
-                  Reworked the platforms language localization system and user interface, allowing support for default
-                  language settings with the ability to add and remove languages, and set specific language overrides
-                  on a per-campaign and business basis.
+                  Maintained a key role in converting the platform’s campaign builder to an in-house custom single-page
+                  application infrastructure, leading to improved cache compatibility, database performance, and user
+                  experience.
+                </li>
+                <li>
+                  Engineered an interactive client-engagement campaign that allowed users to upload text, images, and
+                  videos, with integrated voting and download features. The platform generated hundreds of thousands of
+                  entries and was used by global brands such as NASCAR.
+                </li>
+                <li>
+                  Reworked the platform’s language localization system and user interface, enabling default language
+                  settings with flexible options to add or remove languages and apply specific overrides per campaign
+                  or business. These enhancements provided teams with greater control over multilingual content and
+                  simplified localization workflows.
                 </li>
               </ul>
             </div>

@@ -111,6 +111,7 @@ section.content:nth-of-type(2n) {
 
         div.content-row {
             & {
+                flex-grow: 1;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -120,6 +121,34 @@ section.content:nth-of-type(2n) {
             @media (max-width: 992px) {
                 flex-direction: column;
                 gap: 25px;
+            }
+        }
+
+        div.content-column {
+            & {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 25px;
+            }
+
+            div.content-container {
+                & {
+                    flex-grow: 0;
+                }
+
+                &:last-child {
+                    flex-grow: 1;
+                }
+            }
+
+            @media (max-width: 992px) {
+                gap: 25px;
+            }
+
+            div.content-container:not(:first-child) {
+                margin-top: 0;
             }
         }
 
@@ -297,7 +326,7 @@ section.experience-section {
                 margin-top: auto;
                 margin-bottom: auto;
                 margin-right: 40px;
-                font-weight: bold;
+                font-size: 22px;
             }
 
             p {
