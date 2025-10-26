@@ -109,6 +109,20 @@ section.content:nth-of-type(2n) {
             margin-left: 8px;
         }
 
+        div.content-row {
+            & {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 35px;
+            }
+
+            @media (max-width: 992px) {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
         div.content-container {
             & {
                 flex: 1;
@@ -265,28 +279,37 @@ section.projects-section {
 }
 
 section.experience-section {
-    div.content-wrapper {
+    div.content-wrapper.experience {
         div.title-container {
             & {
                 display: flex;
                 flex-direction: row;
                 align-content: center;
+                justify-content: space-between;
             }
 
             img {
-                padding-left: 8px;
+                margin-left: 8px;
                 max-width: 220px;
+            }
+
+            h2 {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 40px;
+                font-weight: bold;
             }
 
             p {
                 margin-top: auto;
-                margin-left: auto;
+                text-align: right;
                 padding-right: 16px;
                 padding-bottom: 2px;
                 font-size: 18px;
+                font-style: italic;
             }
 
-            @media (max-width: 576px) {
+            @media (max-width: 992px) {
                 & {
                     flex-direction: column;
                 }
@@ -295,18 +318,45 @@ section.experience-section {
                     max-width: 185px;
                 }
 
+                h2 {
+                    margin-top: 15px;
+                    margin-left: 9px;
+                }
+
                 p {
-                    margin-top: 10px;
+                    margin-top: 0;
                     margin-left: 9px;
                     font-size: 16px;
+                    text-align: left;
                 }
             }
         }
 
         div.content-container {
-            @media (max-width: 576px) {
+            @media (max-width: 992px) {
+                &:first-child {
+                    margin-top: 17px;
+                }
+
+                &:not(:first-child) {
+                    margin-top: 0;
+                }
+            }
+
+            ul {
                 & {
-                    margin-top: 10px !important;
+                    padding-left: 15px;
+                    margin-top: 0;
+                }
+
+                li {
+                    & {
+                        line-height: 1.5em;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 6px;
+                    }
                 }
             }
         }
