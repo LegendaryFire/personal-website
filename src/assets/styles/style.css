@@ -3,10 +3,18 @@
 }
 
 /* Header and navigation */
-header {
+header.navigation {
     display: flex;
     justify-content: center;
     padding: 1vh 6vw;
+
+    @media(min-width: 576px) {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: var(--background-color-secondary);
+        padding: 0 6vw;
+    }
 
     nav {
         max-width: var(--max-width);
