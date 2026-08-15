@@ -70,13 +70,13 @@ h2 {
 }
 
 p {
-    line-height: 1.65em;
-    text-align: justify;
+    line-height: 1.5em;
+    letter-spacing: 0.015em;
 }
 
 li {
-    text-align: justify;
-    letter-spacing: 0.025rem;
+    line-height: 1.5em;
+    letter-spacing: 0.015em;
 }
 
 p:first-child {
