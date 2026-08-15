@@ -171,7 +171,7 @@ section.about-section {
 /* Projects section */
 section.projects-section div.content-container {
     p.project-description {
-        min-height: 90px;
+        min-height: 70px;
 
         @media (max-width: 992px) {
             min-height: 0;
@@ -183,8 +183,8 @@ section.projects-section div.content-container {
         margin-top: 0;
 
         li {
-            font-size: 17px;
-            margin-bottom: 7px;
+            font-size: 15px;
+            margin-bottom: 4px;
             margin-left: 15px;
 
             span.icon {
