@@ -1,9 +1,9 @@
 :root {
     --background-color-primary: #232d3f;
     --background-color-secondary: #0d131d;
-    --background-color-content: #1d2533;
+    --background-color-content: #161d29;
     --primary-text-color: #dadada;
-    --secondary-text-color: #cad4e5;
+    --secondary-text-color: #b0b6c5;
     --border-color: #1f2933;
     --button-hover-color: #1f2b3c;
     --hover-color: #cecece;
@@ -71,7 +71,12 @@ h2 {
 
 p {
     line-height: 1.65em;
-    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+li {
+    text-align: justify;
+    letter-spacing: 0.025rem;
 }
 
 p:first-child {
