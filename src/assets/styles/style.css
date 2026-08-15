@@ -129,7 +129,7 @@ section.content {
             box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.12);
             margin-top: 20px;
             color: var(--secondary-text-color);
-            font-size: 17px;
+            font-size: 16px;
 
             &:only-child {
                 margin-top: 0;
@@ -170,14 +170,6 @@ section.about-section {
 
 /* Projects section */
 section.projects-section div.content-container {
-    p.project-description {
-        min-height: 70px;
-
-        @media (max-width: 992px) {
-            min-height: 0;
-        }
-    }
-
     ul.project-points {
         padding-left: 0;
         margin-top: 0;
@@ -198,11 +190,16 @@ section.projects-section div.content-container {
 
     div.project-footer {
         margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
 
         hr {
-            width: calc(100% - 13ch);
+            flex: 1;
+            min-width: 0;
             opacity: 0.15;
-            float: left;
+            height: 1px;
 
             @media (max-width: 992px) {
                 opacity: 0.25;
@@ -210,8 +207,36 @@ section.projects-section div.content-container {
         }
 
         a.project-link {
-            float: right;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            padding: 7px 14px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--secondary-text-color);
+            background-color: var(--background-color-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
+
+            i {
+                font-size: 17px;
+                line-height: 1;
+            }
+
+            &:hover {
+                color: var(--primary-text-color);
+                background-color: var(--button-hover-color);
+                box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--hover-color);
+                outline-offset: 2px;
+            }
         }
     }
 }
