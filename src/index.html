@@ -126,6 +126,39 @@
       </header>
       <section class="content projects-section">
         <div class="content-wrapper">
+          <h2 class="title">Strata Slim</h2>
+          <div class="content-container">
+            <p class="project-description">
+                Run powerful AI on your own computer. The Strata inference engine with everything a server doesn't
+                need left on the cutting room floor - no desktop app, no installer, no terminal UI. Just the engine,
+                the API server, and the tools that get a model ready, packed into a Docker image.
+            </p>
+            <ul class="project-points">
+              <li>
+                Serves an OpenAI/Anthropic-compatible API on localhost
+                with optional image input, so existing chat and coding
+                clients connect as-is.
+              </li>
+              <li>
+                Container-first: one .env file holds every setting and is
+                the config as it runs, with images for NVIDIA (CUDA) and
+                AMD (ROCm).
+              </li>
+              <li>
+                docker compose up -d downloads, checks, packs and serves
+                the model on its own - no presets and no leftover state.
+              </li>
+            </ul>
+            <div class="project-footer">
+                <hr />
+                <a class="project-link" href="https://github.com/LegendaryFire/strata-slim" target="_blank">
+                  <i class="fa-brands fa-square-github" aria-hidden="true"></i>See on GitHub
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
           <h2 class="title">Magplex</h2>
           <div class="content-container">
             <p class="project-description">
@@ -154,30 +187,30 @@
         </div>
 
         <div class="content-wrapper">
-          <h2 class="title">Balon.js</h2>
+          <h2 class="title">Crash Course 2 Revived</h2>
           <div class="content-container">
             <p class="project-description">
-                A dependency-free frontend framework built directly on native Web Components. No virtual DOM, no build
-                step for templates - components are real custom elements that render themselves, with state held in
-                context elements placed right in the DOM.
+                Doritos Crash Course 2 shipped as an Xbox Live Arcade title, and when Live shut down for it the retail
+                game never reached a menu. This patches the game's own files so it starts and plays offline on a
+                modded Xbox 360, launched from Aurora.
             </p>
             <ul class="project-points">
               <li>
-                State lives in scoped context elements, so a write only re-renders
-                the components beneath it.
+                No server, no proxy, no second console - the patches go
+                straight into the game's files, on RGH and JTAG consoles.
               </li>
               <li>
-                The renderer preserves focus and caret position across renders, and
-                dependencies run side effects when watched state changes.
+                A single Python script merges the retail package and the
+                title update, with a small XEX unpacker written in C.
               </li>
               <li>
-                Ships with a declarative router and a matching UI component library
-                with theming and skeleton loading states.
+                All patches are ported from the MIT-licensed Doritos
+                Crash Course mod for the Xenia emulator.
               </li>
             </ul>
             <div class="project-footer">
                 <hr />
-                <a class="project-link" href="https://github.com/LegendaryFire/balon-js" target="_blank">
+                <a class="project-link" href="https://github.com/LegendaryFire/crash-course-2-revived" target="_blank">
                   <i class="fa-brands fa-square-github" aria-hidden="true"></i>See on GitHub
                 </a>
             </div>
@@ -185,29 +218,31 @@
         </div>
 
         <div class="content-wrapper">
-          <h2 class="title">Edge Runlist Builder</h2>
+          <h2 class="title">Surface Touch</h2>
           <div class="content-container">
             <p class="project-description">
-                A script which generates vehicle runlists for Edge Pipeline auctions and automatically calculates currency
-                conversions, break-even costs, profits and line prices. Easily export your results to an Excel spreadsheet.
+                Touchpad, touchscreen, and pen drivers for the Surface Laptop Studio 2 on Linux. The touch hardware
+                sits on two Intel THC SPI ports that the stock driver doesn't bind, and once bound it sends data
+                nothing in the kernel decodes.
             </p>
             <ul class="project-points">
               <li>
-                Use presale auction data and find inventory using the point of
-                sales system REST API.
+                A DKMS kernel module binds the machine's THC SPI ports to
+                intel_quickspi.
               </li>
               <li>
-                Effortless integration with Microsoft Excel and Teams for easy
-                collaboration on shared documents.
+                Userspace daemons replay the raw HID frames through uhid,
+                so the hardware arrives as an ordinary touchpad,
+                touchscreen and pen.
               </li>
               <li>
-                Complete column customization with result sorting and filtering
-                using regular expressions.
+                Gestures, scrolling and pen pressure work out of the box
+                through hid-multitouch, libinput and the desktop stack.
               </li>
             </ul>
             <div class="project-footer">
                 <hr />
-                <a class="project-link" href="https://github.com/LegendaryFire/edge-runlist-builder" target="_blank">
+                <a class="project-link" href="https://github.com/LegendaryFire/surface-touch" target="_blank">
                   <i class="fa-brands fa-square-github" aria-hidden="true"></i>See on GitHub
                 </a>
             </div>
